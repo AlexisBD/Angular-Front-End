@@ -1,0 +1,29 @@
+<br>
+<br>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">testName</th>
+      <th scope="col">testPate</th>
+      <th scope="col">testMate</th>
+      <th scope="col">Acciones</th> 
+      <button type="button" routerLink="/form" class="btn btn-light">Crear Usuario</button>                        
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor= "let datos of data">      
+      <td>{{datos.id}}</td>
+      <td>{{datos.testName}}</td>
+      <td>{{datos.testPate}}</td>
+      <td>{{datos.testMate}}</td>
+      <td>            
+          <button type="button" routerLink="/form/{{datos.id}}" class="btn btn-primary">Editar</button>          
+          <button (click)="deleteUser(datos.id)" style="margin-left: 20px" class="btn btn-danger">Eliminar</button>                      
+      </td>
+    </tr>  
+  </tbody>
+</table>
+
+

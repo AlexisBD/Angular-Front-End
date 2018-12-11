@@ -1,0 +1,23 @@
+<br>
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+        <button type="button" routerLink="/dashboard" class="btn btn-light">Ver Usuarios</button>            
+    </li>
+</ul>
+<br>
+  <div>
+    <div class="form-group">
+      <label for="testName">Nombre</label>
+      <input  [(ngModel)]="dashboard.testName" type="text" class="form-control" id="testName" placeholder="Ingrese su nombre">     
+    </div>
+    <div class="form-group">
+      <label for="testPate">Apellido Paterno</label>
+      <input  [(ngModel)]="dashboard.testPate" type="text" class="form-control" id="testPate" placeholder="Ingrese su apellido paterno">     
+    </div>
+    <div class="form-group">
+      <label for="testMate">Apellido Materno</label>
+      <input  [(ngModel)]="dashboard.testMate" type="text" class="form-control" id="testMate" placeholder="Ingrese su apellido">     
+    </div>
+    <button (click)="saveUser()" routerLink="/dashboard" class="btn btn-success">Guardar</button>    
+  </div>
+  

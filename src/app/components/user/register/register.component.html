@@ -1,0 +1,36 @@
+
+<section id="register" class="mb-5 register-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
+        <div class="card_register">
+          <div class="card">
+            <div class="card-body text-center">
+              <form #formRegister="ngForm" (ngSubmit)="onRegister()">
+                <h1 class="h3 mb-3 front-weight-normal">
+                  Registro
+                </h1>
+                <div class="form-group">
+                  <input type="text" id="username" name="username" [(ngModel)]="user.username" class="form-control" placeholder="username" required>
+                </div>
+                 <div class="form-group">
+                  <input type="text" id="email" name="email" [(ngModel)]="user.email"  class="form-control" placeholder="email" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="password" name="password" [(ngModel)]="user.password"  class="form-control" placeholder="password" required>
+                </div>
+                <button type="submit" class="btn btn-lg btn-primary btn-block" >
+                  Registrate
+                </button>
+                <br>
+                <div class="form-group">
+                  <a>¿Ya estas registrado? <a routerLink="/"> Login</a></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

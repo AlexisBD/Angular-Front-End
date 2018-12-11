@@ -1,0 +1,18 @@
+.crud-top{
+    position: relative;
+    top:150px;
+}
+.edit-top{
+    position: relative;
+    top:250px;
+}
+.form-group #Name{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.form-group #Namefor{
+    position: relative;
+    top: -1%;
+    left: 120%;
+}
